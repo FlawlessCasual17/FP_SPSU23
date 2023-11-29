@@ -1,4 +1,4 @@
-﻿namespace LoginPage {
+namespace LoginPage {
     // ReSharper disable once RedundantExtendsListEntry
     public partial class MainPage : ContentPage {
         private int count;
