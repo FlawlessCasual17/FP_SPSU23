@@ -1,0 +1,29 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "dmytrobaida.gpt-commit",
+        "adrianwilczynski.asp-net-core-snippet-pack",
+        "adrianwilczynski.asp-net-core-switcher",
+        "ms-dotnettools.csharp",
+        "somejack.csharp-code-snippets",
+        "ms-dotnettools.csdevkit",
+        "duffis.csharpsnippets",
+        "kreativ-software.csharpextensions",
+        "gaoshan0621.csharp-format-usings",
+        "eservice-online.vs-sharper",
+        "realvisualstudio.realautocomplete",
+        "ms-dotnettools.vscodeintellicode-csharp",
+        "revrenlove.c-sharp-utilities",
+        "jacokok.csharp-stretch",
+        "jongrant.csharpsortusings",
+        "jorgeserrano.vscode-csharp-snippets",
+        "aliasadidev.csharprefactor",
+        "adrianwilczynski.namespace",
+        "frasercrosbie.csharp-model-to-builder",
+        "evgeniypolyak.csharp-helper-plus",
+        "dannymcgee.csharp-grammar-extended",
+        "vain0x.csharp-gen-ctor",
+        "mechatroner.rainbow-csv",
+        "rafistatar.addlocalnetreferences"
+    ]
+}

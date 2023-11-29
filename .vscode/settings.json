@@ -1,0 +1,48 @@
+{
+    // dotNET settings:
+    "csharpextensions.useFileScopedNamespace": true,
+    "dotnet.preferCSharpExtension": true,
+    // Other things
+    "cSpell.words": [
+        "fregante",
+        "Hieu",
+        "Mansour",
+        "netstandard",
+        "Newtonsoft",
+        "OTBS",
+        "Pham",
+        "Stroustrup",
+        "Traveless"
+    ],
+    "editor.formatOnSave": false,
+    "files.enableTrash": false,
+    "csv-edit.finalNewLine": "remove",
+    "[csv]": {
+        "files.insertFinalNewline": false,
+        "editor.renderFinalNewline": "off",
+        "files.trimFinalNewlines": true
+    },
+    "rainbow_csv.align_in_scratch_file": true,
+    "rainbow_csv.autodetect_separators": [
+        "TAB",
+        ",",
+        ";",
+        "|",
+        ":"
+    ],
+    "rainbow_csv.csv_lint_detect_trailing_spaces": false,
+    "rainbow_csv.enable_context_menu_tail": true,
+    "rainbow_csv.enable_context_menu_head": true,
+    "rainbow_csv.rbql_with_headers_by_default": true,
+    "rainbow_csv.comment_prefix": "#",
+    // PowerShell
+    "[powershell]": {
+        "editor.formatOnSave": true
+    },
+    "powershell.codeFormatting.preset": "OTBS",
+    // "powershell.codeFormatting.alignPropertyValuePairs": true,
+    "powershell.codeFormatting.ignoreOneLineBlock": true,
+    "powershell.integratedConsole.startInBackground": true,
+    "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
+    "powershell.scriptAnalysis.enable": true
+}
