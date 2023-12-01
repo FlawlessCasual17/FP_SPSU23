@@ -13,8 +13,8 @@
       <Path>Copy-Git-Diff-Output.ps1</Path>
       <Path>FP_SPSU23.sln.DotSettings</Path>
       <Path>FP_SPSU23.sln.DotSettings.user</Path>
-      <Path>LoginPage/.paket/Paket.Restore.targets</Path>
-      <Path>LoginPage/.paket/paket.targets</Path>
+      <Path>SplashPage/.paket/Paket.Restore.targets</Path>
+      <Path>SplashPage/.paket/paket.targets</Path>
       <Path>README.md</Path>
       <Path>global.json</Path>
       <Path>install-maui.ps1</Path>
