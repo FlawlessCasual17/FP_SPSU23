@@ -6,6 +6,7 @@ namespace FinalProjectV9 {
             //add something here to navigate to gym management page
         }
 
-        private void OnRegisterTapped(object sender, EventArgs e) => Navigation.PushAsync(new SignIn());
+        private void OnRegisterTapped(object sender, EventArgs e)
+            => Navigation.PushAsync(new SignIn());
     }
 }
