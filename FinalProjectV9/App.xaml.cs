@@ -1,5 +1,4 @@
-﻿namespace FinalProjectV9 {
-    // ReSharper disable once RedundantExtendsListEntry
+namespace FinalProjectV9 {
     public partial class App : Application {
         public App() {
             InitializeComponent();

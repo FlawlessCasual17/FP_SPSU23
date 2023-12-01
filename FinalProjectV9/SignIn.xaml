@@ -57,6 +57,43 @@
                 CornerRadius="20"
                 Text="login"
                 TextColor="White" />
+            <HorizontalStackLayout
+                Margin="0,15,0,0"
+                HorizontalOptions="Center"
+                Spacing="15">
+
+                <Grid Margin="0,50,0,0" ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <BoxView
+                        Grid.Column="0"
+                        HeightRequest="1"
+                        Color="Black" />
+                    <Label
+                        Grid.Column="1"
+                        FontSize="12"
+                        HorizontalOptions="Center"
+                        Text="Use other methods of registering" />
+                    <BoxView
+                        Grid.Column="2"
+                        HeightRequest="1"
+                        Color="Black" />
+                </Grid>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Image
+                    HeightRequest="35"
+                    Source="ic_Google.png"
+                    WidthRequest="35" />
+                <Image
+                    HeightRequest="35"
+                    Source="ic_facebook.png"
+                    WidthRequest="35" />
+            </HorizontalStackLayout>
 
         </VerticalStackLayout>
     </ContentPage.Content>

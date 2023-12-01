@@ -16,6 +16,7 @@ namespace FinalProjectV9.WinUI {
         /// </summary>
         public App() => InitializeComponent();
 
-        protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
+        protected override MauiApp CreateMauiApp()
+            => MauiProgram.CreateMauiApp();
     }
 }

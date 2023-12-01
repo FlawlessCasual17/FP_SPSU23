@@ -1,4 +1,5 @@
 namespace FinalProjectV9 {
+    // ReSharper disable once RedundantExtendsListEntry
     public partial class Login : ContentPage {
         public Login() { InitializeComponent(); }
 
