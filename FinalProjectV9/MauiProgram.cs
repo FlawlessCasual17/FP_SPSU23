@@ -1,4 +1,4 @@
-﻿namespace FinalProjectV9 {
+namespace FinalProjectV9 {
     public static class MauiProgram {
         public static MauiApp CreateMauiApp() {
             var builder = MauiApp.CreateBuilder();
