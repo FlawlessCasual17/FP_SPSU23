@@ -11,7 +11,7 @@
                     <Image
                         HeightRequest="300"
                         HorizontalOptions="Center"
-                        Source="skh_gym_login.jpg"
+                        Source="skh_gym_login.png"
                         VerticalOptions="Start"
                         WidthRequest="300" />
                     <Label
