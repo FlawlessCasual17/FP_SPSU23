@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Shell
+    x:Class="FinalProjectV9.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:finalProjectV9="using:FinalProjectV9"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="SKH Gym Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="Home" />
+
+    <ShellContent
+        Title="SKH Gym Login"
+        ContentTemplate="{DataTemplate local:Login}"
+        Route="Login" />
+
+    <ShellContent
+        Title="SKH Gym Sign Up"
+        ContentTemplate="{DataTemplate finalProjectV9:SignIn}"
+        Route="=Sign In" />
+
+</Shell>

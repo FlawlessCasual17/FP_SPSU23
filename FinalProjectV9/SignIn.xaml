@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="FinalProjectV9.SignIn"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="SignIn">
+    <ContentPage.Content>
+        <VerticalStackLayout Margin="0,20,0,0">
+            <Label
+                Padding="10"
+                BackgroundColor="#4529BA"
+                FontSize="50"
+                HeightRequest="100"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                Text="Sign Up"
+                TextColor="White"
+                VerticalTextAlignment="Center"
+                WidthRequest="300" />
+            <Label
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+                Text="First name"
+                WidthRequest="70" />
+            <StackLayout>
+                <Entry Margin="{OnPlatform Android='0,0', iOS='0,10'}" Placeholder="Enter First Name" />
+                <BoxView HeightRequest="1" Color="#4529BA" />
+            </StackLayout>
+
+            <Label
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+                Text="Last name"
+                WidthRequest="70" />
+            <StackLayout>
+                <Entry Margin="{OnPlatform Android='0,0', iOS='0,10'}" Placeholder="Enter Last Name" />
+                <BoxView HeightRequest="1" Color="#4529BA" />
+            </StackLayout>
+
+            <Label
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+                Text="Email"
+                WidthRequest="70" />
+            <StackLayout>
+                <Entry Margin="{OnPlatform Android='0,0', iOS='0,10'}" Placeholder="Enter Last Name" />
+                <BoxView HeightRequest="1" Color="#4529BA" />
+            </StackLayout>
+
+            <!--  Add a function in this button to navigate to the manager page  -->
+            <Button
+                x:Name="SignInOnPage"
+                Margin="0,20,0,0"
+                BackgroundColor="#4529BA"
+                Clicked="OnClickedSignIn"
+                CornerRadius="20"
+                Text="login"
+                TextColor="White" />
+
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
