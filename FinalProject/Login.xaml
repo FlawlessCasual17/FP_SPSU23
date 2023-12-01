@@ -21,7 +21,7 @@
                     <Image
                         Grid.Column="1"
                         HeightRequest="200"
-                        Source="skh_gym_login.jpg"
+                        Source="skh_gym_login.png"
                         WidthRequest="200" />
                 </Grid>
 
@@ -48,6 +48,7 @@
                 </VerticalStackLayout>
 
                 <!--  Add a function in this button to navigate to the manager page  -->
+                <!--  ReSharper disable once UnusedMember.Local  -->
                 <Button
                     x:Name="LogIn"
                     Margin="0,20,0,0"
@@ -94,7 +95,7 @@
                     Spacing="15">
                     <Image
                         HeightRequest="35"
-                        Source="ic_Google.png"
+                        Source="ic_google.png"
                         WidthRequest="35" />
                     <Image
                         HeightRequest="35"

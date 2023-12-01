@@ -88,7 +88,7 @@
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Image
                     HeightRequest="35"
-                    Source="ic_Google.png"
+                    Source="ic_google.png"
                     WidthRequest="35" />
                 <Image
                     HeightRequest="35"
