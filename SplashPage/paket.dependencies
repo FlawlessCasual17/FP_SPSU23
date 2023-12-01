@@ -5,4 +5,6 @@ storage: none
 group Project
 source https://www.nuget.org/api/v2
 
+nuget MySql.Data
+nuget MySqlConnector
 nuget sqlite-net
