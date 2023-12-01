@@ -1,4 +1,4 @@
-namespace FinalProjectV9 {
+namespace FinalProject {
     public partial class AppShell : Shell {
         public AppShell() { InitializeComponent(); }
     }

@@ -1,4 +1,4 @@
-namespace FinalProjectV9 {
+namespace FinalProject {
     public partial class App : Application {
         public App() {
             InitializeComponent();

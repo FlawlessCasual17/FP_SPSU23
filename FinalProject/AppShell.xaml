@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Shell
-    x:Class="FinalProjectV9.AppShell"
+    x:Class="FinalProject.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:finalProjectV9="using:FinalProjectV9"
+    xmlns:finalProject="using:FinalProject"
     FlyoutBehavior="Flyout">
 
     <ShellContent
         Title="SKH Gym Home"
-        ContentTemplate="{DataTemplate finalProjectV9:MainPage}"
+        ContentTemplate="{DataTemplate finalProject:MainPage}"
         Route="Home" />
 
     <ShellContent
         Title="SKH Gym Login"
-        ContentTemplate="{DataTemplate finalProjectV9:Login}"
+        ContentTemplate="{DataTemplate finalProject:Login}"
         Route="Login" />
 
     <ShellContent
         Title="SKH Gym Sign Up"
-        ContentTemplate="{DataTemplate finalProjectV9:SignIn}"
+        ContentTemplate="{DataTemplate finalProject:SignIn}"
         Route="=Sign In" />
 
 </Shell>
