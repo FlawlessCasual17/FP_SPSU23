@@ -5,4 +5,5 @@ storage: none
 group Project
 source https://www.nuget.org/api/v2
 
+nuget Microsoft.Extensions.Logging.Debug 7.0.0
 nuget sqlite-net
