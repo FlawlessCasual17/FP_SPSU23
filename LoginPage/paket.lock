@@ -3,4 +3,4 @@ STORAGE: NONE
 GROUP Project
 NUGET
   remote: https://www.nuget.org/api/v2
-    SQLite (3.13)
+    sqlite-net (1.6.292)
