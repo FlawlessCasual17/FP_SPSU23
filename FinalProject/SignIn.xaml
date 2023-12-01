@@ -49,6 +49,7 @@
             </StackLayout>
 
             <!--  Add a function in this button to navigate to the manager page  -->
+            <!--  ReSharper disable once UnusedMember.Local  -->
             <Button
                 x:Name="SignInOnPage"
                 Margin="0,20,0,0"
