@@ -1,0 +1,4 @@
+group Project
+MySql.Data
+MySqlConnector
+sqlite-net
