@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="FinalProjectV9" type="UwpProject" factoryName="UWP">
+    <option name="PROJECT_PATH" value="$PROJECT_DIR$/FinalProjectV9/FinalProjectV9.csproj" />
+    <option name="PROGRAM_PARAMETERS" value="" />
+    <method v="2" />
+  </configuration>
+</component>
