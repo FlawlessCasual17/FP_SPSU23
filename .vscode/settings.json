@@ -44,5 +44,6 @@
     "powershell.codeFormatting.ignoreOneLineBlock": true,
     "powershell.integratedConsole.startInBackground": true,
     "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
-    "powershell.scriptAnalysis.enable": true
+    "powershell.scriptAnalysis.enable": true,
+    "svg.preview.background": "editor"
 }
