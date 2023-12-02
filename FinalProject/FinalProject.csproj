@@ -43,7 +43,7 @@
     <MauiXaml Update="Login.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
-    <MauiXaml Update="SignIn.xaml">
+    <MauiXaml Update="SignUp.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
   </ItemGroup>

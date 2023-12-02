@@ -1,6 +1,6 @@
 namespace FinalProject {
-    public partial class SignIn {
-        public SignIn() => InitializeComponent();
+    public partial class SignUp {
+        public SignUp() => InitializeComponent();
 
         private void OnClickedSignIn(object sender, EventArgs e) {
             //Add a function for the sign in button here

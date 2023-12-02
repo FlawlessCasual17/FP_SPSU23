@@ -19,7 +19,7 @@
 
     <ShellContent
         Title="SKH Gym Sign Up"
-        ContentTemplate="{DataTemplate finalProject:SignIn}"
+        ContentTemplate="{DataTemplate finalProject:SignUp}"
         Route="=Sign In" />
 
 </Shell>
