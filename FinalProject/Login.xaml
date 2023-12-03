@@ -55,7 +55,7 @@
                     BackgroundColor="#4529BA"
                     Clicked="OnClickedLogIn"
                     CornerRadius="20"
-                    Text="login"
+                    Text="Login"
                     TextColor="White" />
 
                 <Label

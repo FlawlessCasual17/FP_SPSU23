@@ -4,7 +4,6 @@ namespace FinalProject {
 
         private void OnClickedSignIn(object sender, EventArgs e) {
             //Add a function for the sign in button here
-
         }
     }
 }
