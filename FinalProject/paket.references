@@ -1,4 +1,3 @@
 group Project
-MySql.Data
-MySqlConnector
 sqlite-net
+System.Data.SQLite
