@@ -5,4 +5,4 @@ storage: none
 group Project
 source https://api.nuget.org/v3/index.json
 
-nuget sqlite-net
+nuget sqlite-net-pcl
