@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.1" id="Layer_1" x="0px" y="0px" width="256px" height="256px" viewBox="0 0 256 256"
+    enable-background="new 0 0 256 256" xml:space="preserve" sodipodi:docname="appicon-to-convert.svg"
+    inkscape:version="1.3.1 (91b66b0783, 2023-11-16)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <defs id="defs1" />
+    <sodipodi:namedview id="namedview1" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1"
+        inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050"
+        inkscape:zoom="8" inkscape:cx="259.1875" inkscape:cy="16.8125" inkscape:window-width="1920"
+        inkscape:window-height="1020" inkscape:window-x="-8" inkscape:window-y="32" inkscape:window-maximized="1"
+        inkscape:current-layer="layer1" showgrid="false" />
+    <image id="image0" width="240" height="240" x="8" y="8"
+        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAMAAAAJixmgAAAAIGNIUk0AAHomAACAhAAA+gAAAIDo AAB1MAAA6mAAADqYAAAXcJy6UTwAAAA/UExURWZmZjM5ZTE3ZDM4ZUJIdTI4ZEVLd0dNeTQ6ZjU7 ZzY7aDQ6ZzY8aD1DcEFGczc9aUNJdURKdkxSfktRfv///xF3WDAAAAABYktHRBSS38k1AAAACXBI WXMAAA7AAAAOwAFq1okJAAAAB3RJTUUH5wwDFw07DRzh6QAAAU1JREFUeNrt1n1TgjAAwGEYUkPS sr7/d83q7BgacMmbx/P857Hb9hsqZBkAAAAAAAAAAAAAAAAAAAAAAAAAwHrloWm8eZNpi6UrBQsW LPhxgndJ4FzBjU/lzMFPggULFixYsGDBggULFixYsGDBggULXnfwcxIY5wjOlwkORbiS3uBQxTCO 2H9tP3VvkV+vXd86hA5lOXBc57TfF/NixO/Tzfu7QoIFCxb8t/z+DV4M/K9eODg7PwnO6uaKeesU impYcN0zoGo9lpJ1fo5rH6fuvXhprH2I6c6OQ188eu5xPKbnGA9XQ+rXmXqTH3OWpTufZpWvl8lp VvlHcJgjOAgWLFiwYMGCBQsWLFiwYMGCBQsWfI9ia8HdG5tq3rfdr9MmgldD8MrnXe3GHiG4DO/b Cg6njw0EAwAAAAAAAAAAAAAAAAAAAAAAAAC0fQIYniKHYmqprQAAACV0RVh0ZGF0ZTpjcmVhdGUA MjAyMy0xMi0wMlQwNjowNzoxNSswMDowMH88OPsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMTIt MDNUMjM6MTI6MzIrMDA6MDD8bUsfAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTEyLTAzVDIz OjEzOjU5KzAwOjAwgNJcgwAAAABJRU5ErkJggg==" />
+    <g inkscape:groupmode="layer" id="layer1" inkscape:label="Layer 1">
+        <rect style="fill:#666666;fill-opacity:1;stroke-width:1.00708" id="rect1" width="8.0282059" height="256.00574"
+            x="0.0029201731" y="0.00064469874" />
+        <rect style="fill:#666666;fill-opacity:1;stroke-width:1.00585" id="rect2" width="8.0087223" height="255.99792"
+            x="247.99219" y="0.0039060116" />
+        <rect style="fill:#666666;stroke-width:60.5743" id="rect3" width="239.96484" height="8.0012054" x="8.03125"
+            y="248" />
+        <rect style="fill:#666666;stroke-width:60.7662" id="rect4" width="239.96484" height="8.0519867" x="8.03125"
+            y="0.00064469874" />
+    </g>
+</svg>
