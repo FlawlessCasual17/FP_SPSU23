@@ -8,11 +8,12 @@
     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
     <defs id="defs1" />
-    <sodipodi:namedview id="namedview1" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1"
+    <!-- Uncomment the below element if you need these specific Inkscape configurations. -->
+    <!-- <sodipodi:namedview id="namedview1" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1"
         inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050"
         inkscape:zoom="8" inkscape:cx="259.1875" inkscape:cy="16.8125" inkscape:window-width="1920"
         inkscape:window-height="1020" inkscape:window-x="-8" inkscape:window-y="32" inkscape:window-maximized="1"
-        inkscape:current-layer="layer1" showgrid="false" />
+        inkscape:current-layer="layer1" showgrid="true" /> -->
     <image id="image0" width="240" height="240" x="8" y="8"
         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAMAAAAJixmgAAAAIGNIUk0AAHomAACAhAAA+gAAAIDo AAB1MAAA6mAAADqYAAAXcJy6UTwAAAA/UExURWZmZjM5ZTE3ZDM4ZUJIdTI4ZEVLd0dNeTQ6ZjU7 ZzY7aDQ6ZzY8aD1DcEFGczc9aUNJdURKdkxSfktRfv///xF3WDAAAAABYktHRBSS38k1AAAACXBI WXMAAA7AAAAOwAFq1okJAAAAB3RJTUUH5wwDFw07DRzh6QAAAU1JREFUeNrt1n1TgjAAwGEYUkPS sr7/d83q7BgacMmbx/P857Hb9hsqZBkAAAAAAAAAAAAAAAAAAAAAAAAAwHrloWm8eZNpi6UrBQsW LPhxgndJ4FzBjU/lzMFPggULFixYsGDBggULFixYsGDBggULXnfwcxIY5wjOlwkORbiS3uBQxTCO 2H9tP3VvkV+vXd86hA5lOXBc57TfF/NixO/Tzfu7QoIFCxb8t/z+DV4M/K9eODg7PwnO6uaKeesU impYcN0zoGo9lpJ1fo5rH6fuvXhprH2I6c6OQ188eu5xPKbnGA9XQ+rXmXqTH3OWpTufZpWvl8lp VvlHcJgjOAgWLFiwYMGCBQsWLFiwYMGCBQsWfI9ia8HdG5tq3rfdr9MmgldD8MrnXe3GHiG4DO/b Cg6njw0EAwAAAAAAAAAAAAAAAAAAAAAAAAC0fQIYniKHYmqprQAAACV0RVh0ZGF0ZTpjcmVhdGUA MjAyMy0xMi0wMlQwNjowNzoxNSswMDowMH88OPsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMTIt MDNUMjM6MTI6MzIrMDA6MDD8bUsfAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTEyLTAzVDIz OjEzOjU5KzAwOjAwgNJcgwAAAABJRU5ErkJggg==" />
     <g inkscape:groupmode="layer" id="layer1" inkscape:label="Layer 1">
