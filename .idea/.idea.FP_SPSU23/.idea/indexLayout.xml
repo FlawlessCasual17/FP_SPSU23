@@ -13,6 +13,7 @@
       <Path>Copy-Git-Diff-Output.ps1</Path>
       <Path>FP_SPSU23.sln.DotSettings</Path>
       <Path>FP_SPSU23.sln.DotSettings.user</Path>
+      <Path>FinalProject/.paket</Path>
       <Path>README.md</Path>
       <Path>global.json</Path>
       <Path>install-maui.ps1</Path>
