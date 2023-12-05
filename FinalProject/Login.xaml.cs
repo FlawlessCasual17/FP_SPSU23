@@ -31,7 +31,7 @@ namespace FinalProject {
         /// <param name="sender"></param>
         /// <param name="ev"></param>
         private async void OnClickedLogIn(object sender, EventArgs ev) {
-            var user = await new GymManDB().GetUserAsync(UEmail.Text, Password.Text);
+            var user = await new GymManDB().GetUserAsync(uEmail.Text, Password.Text);
 
             switch (user) {
                 case null:
