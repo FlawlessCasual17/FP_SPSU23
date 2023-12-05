@@ -8,13 +8,14 @@ namespace FinalProject {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
 
-        /// <summary>The member's username.</summary>
-        public string Username { get; set; }
+        // Uncomment later when a use case has been found for this.
+        // /// <summary>The member's username.</summary>
+        // public string Username { get; set; }
 
         /// <summary>The member's email.</summary>
-        public string Email { get; set; }
+        public string Email { get; init; }
 
         /// <summary>The member's password.</summary>
-        public string Password { get; set; }
+        public string Password { get; init; }
     }
 }
