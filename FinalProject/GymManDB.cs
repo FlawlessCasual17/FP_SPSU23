@@ -1,5 +1,4 @@
 using SQLite;
-// using Microsoft.Maui.Essentials;
 
 namespace FinalProject {
     // ReSharper disable once InconsistentNaming
@@ -24,7 +23,7 @@ namespace FinalProject {
         /// The path to the database file (*.db/*.sqlite),
         /// can be an absolute or relative path.
         /// </param>
-        public GymManDB(string dbPath) {
+        public GymManDB(string dbPath = "") {
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<GymMember>().Wait();
         }

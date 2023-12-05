@@ -26,9 +26,13 @@
                 </Grid>
 
                 <VerticalStackLayout Margin="0,20,0,0">
+
                     <Label Text="Email" />
                     <StackLayout>
-                        <Entry Margin="{OnPlatform Android='0,0', iOS='0,10'}" Placeholder="Enter Email" />
+                        <Entry
+                            x:Name="UEmail"
+                            Margin="{OnPlatform Android='0,0', iOS='0,10'}"
+                            Placeholder="Enter Email" />
                         <BoxView HeightRequest="1" Color="#4529BA" />
                     </StackLayout>
 
@@ -38,6 +42,7 @@
                     <Label Text="Password" />
                     <StackLayout>
                         <Entry
+                            x:Name="Password"
                             Margin="{OnPlatform Android='0,0',
                                                 iOS='0,10'}"
                             IsPassword="True"
@@ -48,15 +53,13 @@
                 </VerticalStackLayout>
 
                 <!--  Add a function in this button to navigate to the manager page  -->
-                <!--  ReSharper disable once UnusedMember.Local  -->
                 <Button
-                    x:Name="LogIn"
                     Margin="0,20,0,0"
                     BackgroundColor="#4529BA"
                     Clicked="OnClickedLogIn"
                     CornerRadius="20"
                     Text="Login"
-                    TextColor="White" />
+                    TextColor="White" /><!-- x:Name="LogIn"(for later...) -->
 
                 <Label
                     Margin="0,15,0,0"
