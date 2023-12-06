@@ -23,6 +23,7 @@
     <ApplicationIcon>Resources/AppIcon/appicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+
     <!-- App Icon -->
     <MauiIcon Include="Resources/AppIcon/appicon.svg" ForegroundFile="Resources/AppIcon/appiconfg.svg" Color="#666666"/>
     
