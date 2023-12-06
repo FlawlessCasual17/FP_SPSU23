@@ -10,7 +10,6 @@
     
     <!-- Display name -->
     <ApplicationTitle>FinalProject</ApplicationTitle>
-    
     <!-- App Identifier -->
     <ApplicationId>com.companyname.FinalProject</ApplicationId>
     <ApplicationIdGuid>c1ec3e9a-d8cf-4937-8bf3-8a570cfe1fde</ApplicationIdGuid>
