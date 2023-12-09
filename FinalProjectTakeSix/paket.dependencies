@@ -1,0 +1,9 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+
+group Project
+source https://api.nuget.org/v3/index.json
+
+nuget Microsoft.Data.Sqlite.Core
+nuget SQLitePCLRaw.bundle_e_sqlite3
