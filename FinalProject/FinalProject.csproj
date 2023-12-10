@@ -47,6 +47,9 @@
     <MauiXaml Update="SignUp.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
+    <MauiXaml Update="ManageMember.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
   </ItemGroup>
   <Import Project=".paket/Paket.Restore.targets"/>
 </Project>
