@@ -17,6 +17,10 @@ namespace FinalProject {
         /// relevant XAML page is clicked.
         /// </summary>
         private void OnClickLogIn(object sender, EventArgs e)
-            => Navigation.PushAsync(new Login());
+            => Shell.Current.GoToAsync("//LogIn");
+
+        private void OnClickSignUp(object sender, EventArgs e)
+            => Shell.Current.GoToAsync("//SignUp");
+
     }
 }

@@ -36,33 +36,35 @@ namespace FinalProject {
         /// Gets a user from the database based on
         /// their email and password.
         /// </summary>
-        /// <param name="email">The user's email.</param>
+        /// <param name="username">The user's username.</param>
         /// <param name="password">The user's password.</param>
         /// <returns>
         /// A <see cref="GymMember"/> object.
         /// </returns>
-        public async Task<GymMember> GetUserAsync(string email, string password)
+        public async Task<GymMember> GetUserAsync(string username, string password) {
             // The `==` operator is safer and faster instead of using `object.Equals()`.
-            => await database.Table<GymMember>().Where(bool (gm) =>
-                    gm.Email == email
+            return await database.Table<GymMember>().Where(gm =>
+                    gm.Username == username
                     && gm.Password == password)
                 .FirstOrDefaultAsync();
+        }
 
         /// <summary>
         /// Checks if a user exists in the database
         /// based on their email and password.
         /// </summary>
-        /// <param name="email">The user's email.</param>
+        /// <param name="username">The user's username.</param>
         /// <param name="password">The user's password.</param>
         /// <returns>
         /// A <see cref="bool"/> object that indicates
         /// if the user exists in the database or not.
         /// </returns>
-        public async Task<bool> CheckUserCredentials(string email, string password)
+        public async Task<bool> CheckUserCredentials(string username, string password) {
             // The `==` operator is safer and faster instead of using `object.Equals()`.
-            => await database.Table<GymMember>().Where(gm =>
-                    gm.Email == email
+            return await database.Table<GymMember>().Where(gm =>
+                    gm.Username == username
                     && gm.Password == password)
                 .FirstOrDefaultAsync() is not null;
+        }
     }
 }
