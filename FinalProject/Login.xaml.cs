@@ -1,6 +1,6 @@
 namespace FinalProject {
     // ReSharper disable once RedundantExtendsListEntry
-    /// <summary>Adds functionality to the relevant XAML content page.</summary>
+    /// <summary>Adds functionality to the related XAML content page.</summary>
     public partial class Login : ContentPage {
         /// <summary>
         /// A global private readonly static variable for use
@@ -22,22 +22,49 @@ namespace FinalProject {
         /// relevant XAML page is clicked.
         /// </summary>
         private async void OnClickedLogIn(object sender, EventArgs ev) {
+            var database = new GMDatabse(DbPath);
+
             // Checks if the user exists in the database.
-            var isValid = await new GymManDB(DbPath)
-                .CheckUserCredentials(uEmail.Text, Password.Text);
+            var isValid = await database
+                .CheckUserCredentials(Username.Text, Password.Text);
 
             // Acquires the user from the database.
-            var user = await new GymManDB(DbPath)
-                .GetUserAsync(uEmail.Text, Password.Text);
+            var user = await database
+                .GetUserAsync(Username.Text, Password.Text);
 
             // "switch" statements are faster than "if" statements.
             switch (isValid) {
-                case true when user is not null:
-                    // If the user found in the database, report login successful.
-                    await DisplayAlert(
-                        "Login",
-                        "Login Successful",
-                        "OK"); break;
+                case true when user is not null: {
+                    // If the user found in the database, show a confirmation prompt.
+                    var confirmation = await DisplayPromptAsync(
+                        "Confirm User",
+                        $"ID: {user.ID}\nEmail: {user.Email}\nIs this your information?",
+                        "Yes",
+                        "No",
+                        "******",
+                        -1,
+                        Keyboard.Default);
+
+                    /*
+                     * If 'confirmation' is 'Yes", show the user
+                     * they have successfully logged in.
+                     */
+                    if (confirmation.Equals("Yes")) {
+                        await DisplayAlert(
+                            "Login",
+                            "Login Successful",
+                            "OK");
+                        await Navigation.PushAsync(new MainPage());
+                    } // Otherwise, cancel the login prompt.
+                    else {
+                        await DisplayAlert(
+                            "Login",
+                            "Login Cancelled",
+                            "OK");
+                    }
+
+                    break;
+                }
                 default:
                     // If the user not found in the database, report login failed.
                     await DisplayAlert(
