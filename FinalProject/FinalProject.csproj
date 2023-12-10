@@ -21,6 +21,19 @@
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
     <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
     <ApplicationIcon>Resources/AppIcon/appicon.ico</ApplicationIcon>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <Version>2023.12.9-6</Version>
+    <Authors>FinalProject contributors</Authors>
+    <AssemblyVersion>2023.12.9-6</AssemblyVersion>
+    <FileVersion>2023.12.9-6</FileVersion>
+    <NeutralLanguage>en-001</NeutralLanguage>
+    <PackageId>FP2023</PackageId>
+    <Title>FinalProject</Title>
+    <Description>
+      An example of a complex dotNET MAUI app that creates and manages an SQLite database.
+    </Description>
+    <Copyright>Zliced13</Copyright>
   </PropertyGroup>
   <ItemGroup>
 
