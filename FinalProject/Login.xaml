@@ -15,8 +15,9 @@
                     </Grid.ColumnDefinitions>
                     <Label
                         Grid.Column="0"
+                        Padding="200,0,0,0"
                         FontSize="20"
-                        Text="Already registered gym membership?"
+                        Text="Already registered for a Gym Membership?"
                         VerticalOptions="Center" />
                     <Image
                         Grid.Column="1"

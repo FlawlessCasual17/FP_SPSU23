@@ -115,7 +115,6 @@ namespace FinalProject {
             return false;
         }
 
-
         private bool ValidateDateOfBirth(string dateOfBirthText) {
             if (string.IsNullOrEmpty(dateOfBirthText)) {
                 DisplayAlert(
@@ -171,6 +170,7 @@ namespace FinalProject {
                 "Validation Error",
                 "Password and Confirm Password do not match.",
                 "OK");
+
             return false;
 
         }
