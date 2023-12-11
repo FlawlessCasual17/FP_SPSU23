@@ -6,9 +6,20 @@ Doe
 68 Markies Grove SW
 Edgar Allen
 Texas
-T9G G185
+T3Z 8W8
 United States of America
 5030466284
 jdoe@examplemail.com
 Female
 1996/04/14
+Personal Training
+Diabetes
+Both
+John Doe
+4035554321
+Evening
+3
+False
+True
+True
+2023/10/10

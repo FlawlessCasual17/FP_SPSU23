@@ -15,6 +15,7 @@
       <Path>FP_SPSU23.sln.DotSettings.user</Path>
       <Path>FinalProject/.paket</Path>
       <Path>README.md</Path>
+      <Path>dummy-data.txt</Path>
       <Path>global.json</Path>
       <Path>install-maui.ps1</Path>
     </explicitIncludes>
