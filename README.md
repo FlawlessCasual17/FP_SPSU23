@@ -1,11 +1,11 @@
 # .NET MAUI Final Project 2023
 
-_<sup>Last Updated: December 11, 2023 2:14:26 AM (UTC)</sup>_
+_<sup>Last Updated: December 11, 2023 4:12:07 AM (UTC)</sup>_
 
 _Developed by Hieu Pham, Sherif Mansour, and Kris Schneider_
 
 * [.NET MAUI Final Project 2023](#net-maui-final-project-2023)
-  * [**A short summarization of the app**](#a-short-summarization-of-the-app)
+  * [A short summarization of the app](#a-short-summarization-of-the-app)
     * [How to use the app](#how-to-use-the-app)
       * [Sign Up](#sign-up)
       * [Log In](#log-in)
@@ -18,7 +18,7 @@ _Developed by Hieu Pham, Sherif Mansour, and Kris Schneider_
     * [Getting Started (For developers only)](#getting-started-for-developers-only)
       * [Build and run the app](#build-and-run-the-app)
 
-## **A short summarization of the app**
+## A short summarization of the app
 
 Once you've signed up and logged in, you can perform a search, choose a member from the search results, and add a new entry to update the desired field by clicking the update button. The process for deleting is similar: you search, select, click delete, confirm the deletion, and then voilà.
 
