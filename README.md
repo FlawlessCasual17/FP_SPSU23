@@ -178,7 +178,7 @@ Feel free to reach out if you encounter any issues or have suggestions for impro
 
     1. Open the solution in _Visual Studio 2022/JetBrains Rider_, or your preferred IDE.
 
-    1. Please note, the following _NuGet_ are required: **`Microsoft.sqlite.core`** and **`sqlitepclraw.bundle_E_sqlite3`**.
+    1. Please note, the following _NuGet_ packages are required: **`Microsoft.sqlite.core`** and **`sqlitepclraw.bundle_E_sqlite3`**.
         These can be installed by running,
 
         ```bash
