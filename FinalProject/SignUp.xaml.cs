@@ -43,11 +43,10 @@ namespace FinalProject {
         /// relevant XAML page is clicked.
         /// </summary>
         private async void OnClickedSignUp(object sender, EventArgs ev) {
-            if (!ValidateInput()) return;
-
             // Creates a path to the custom database.
             var dbPath = Path.Join(
-                Environment.GetEnvironmentVariable("USERPROFILE"), "creds.db");
+                Environment.GetEnvironmentVariable("USERPROFILE"),
+                "creds.db");
             // Creates a new database.
             var database = new GMDatabse(dbPath);
 
@@ -56,29 +55,33 @@ namespace FinalProject {
             // Holds the value of the inputted username.
             var userName = Username.Text;
 
-            // Creates a new gym member.
-            var member = new GymMember {
-                ID = id, Username = userName,
-                Password = Password.Text,
-                FirstName = FirstName.Text, LastName = LastName.Text,
-                Address = Address.Text, City = City.Text,
-                Region = Region.Text,
-                PostalCode = PostalCode.Text, Country = Country.Text,
-                PhoneNumber = PhoneNumber.Text,
-                Email = EmailEntry.Text, Gender = Gender.Text,
-                DateOfBirth = Convert.ToDateTime(DateOfBirth.Text)
-            };
+            while (ValidateInput()) {
+                if (!ValidateInput()) return;
 
-            // Saves the user to the database.
-            await database.SaveUserAsync(member);
-            // Displays a success message to inform the user.
-            await DisplayAlert(
-                "Success",
-                $"You have successfully registered"
-                + $" your account, {userName}!\n"
-                + $"Your user ID is {id} (Please keep this in safe place! "
-                + $"You will need it for the user login confirmation.))",
-                "OK");
+                // Creates a new gym member.
+                var member = new GymMember {
+                    ID = id, Username = userName,
+                    Password = Password.Text,
+                    FirstName = FirstName.Text, LastName = LastName.Text,
+                    Address = Address.Text, City = City.Text,
+                    Region = Region.Text,
+                    PostalCode = PostalCode.Text, Country = Country.Text,
+                    PhoneNumber = PhoneNumber.Text,
+                    Email = EmailEntry.Text, Gender = Gender.Text,
+                    DateOfBirth = Convert.ToDateTime(DateOfBirth.Text)
+                };
+
+                // Saves the user to the database.
+                await database.SaveUserAsync(member);
+                // Displays a success message to inform the user.
+                await DisplayAlert(
+                    "Success",
+                    $"You have successfully registered"
+                    + $" your account, {userName}!\n"
+                    + $"Your user ID is {id} (Please keep this in safe place! "
+                    + $"You will need it for the user login confirmation.))",
+                    "OK");
+            }
         }
 
         private bool ValidateInput() =>
@@ -93,7 +96,7 @@ namespace FinalProject {
             ValidateRequiredField(Country, "Country") &&
             ValidatePhoneNumber(PhoneNumber.Text) &&
             ValidateEmail(EmailEntry.Text) &&
-            !ValidateDateOfBirth(DateOfBirth.Text);
+            ValidateDateOfBirth(DateOfBirth.Text);
 
         private bool ValidateRequiredField(InputView entry, string fieldName) {
             if (!string.IsNullOrEmpty(entry.Text)) return true;
