@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="FinalProjectTakeSix.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ContentPage.Content>
+
+        <!--  ScrollView allows for scrolling if content overflows  -->
+        <ScrollView>
+
+            <!--  VerticalStackLayout arranges child views in a vertical stack  -->
+            <VerticalStackLayout Padding="20,0" Spacing="0">
+
+                <!--  Grid is used to create a grid of elements  -->
+                <Grid>
+
+                    <!--  Image element displaying a gym logo with specified properties  -->
+                    <Image
+                        HeightRequest="300"
+                        HorizontalOptions="Center"
+                        Source="skh_gym_login.png"
+                        VerticalOptions="Start"
+                        WidthRequest="300" />
+
+                    <!--  Label with a welcome message  -->
+                    <Label
+                        FontSize="30"
+                        HorizontalOptions="Center"
+                        Text="WELCOME TO SKH GYM"
+                        VerticalOptions="End" />
+
+                </Grid>
+
+                <!--  BoxView for spacing  -->
+                <BoxView HeightRequest="80" Color="Transparent" />
+
+                <!--  HorizontalStackLayout arranges child views in a horizontal stack  -->
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="40">
+
+                    <!--  Button for signing up with specified properties and event handler  -->
+                    <Button
+                        x:Name="SignUpButton"
+                        Margin="0,20,0,0"
+                        Padding="10"
+                        BackgroundColor="#4529BA"
+                        Clicked="OnClickSignUp"
+                        CornerRadius="20"
+                        Text="Sign Up"
+                        TextColor="White"
+                        WidthRequest="150" />
+
+                    <!--  Button for logging in with specified properties and event handler  -->
+                    <Button
+                        x:Name="LogInButton"
+                        Margin="0,20,0,0"
+                        Padding="10"
+                        BackgroundColor="#4529BA"
+                        Clicked="OnClickLogIn"
+                        CornerRadius="20"
+                        Text="Log In"
+                        TextColor="White"
+                        WidthRequest="150" />
+
+                    <!--  Button for managing members with specified properties and event handler  -->
+                    <Button
+                        x:Name="ManageMemberButton"
+                        Margin="0,20,0,0"
+                        Padding="10"
+                        BackgroundColor="#4529BA"
+                        Clicked="OnClickManageMember"
+                        CornerRadius="20"
+                        Text="Manage Member"
+                        TextColor="White"
+                        WidthRequest="150" />
+
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

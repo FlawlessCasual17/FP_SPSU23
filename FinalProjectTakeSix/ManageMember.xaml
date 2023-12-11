@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="FinalProjectTakeSix.ManageMember"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ManageMember">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout Margin="0,20,0,0">
+
+                <!--  Search Bar  -->
+                <SearchBar
+                    x:Name="MemberSearchBar"
+                    CancelButtonColor="#4529BA"
+                    Placeholder="Search Members"
+                    WidthRequest="500" />
+                <Label
+                    Margin="20,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Text="Search Results"
+                    TextDecorations="Underline" />
+
+                <!--  Search Results ListView  -->
+                <ListView x:Name="SearchResultsListView" Margin="0,20,0,0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical">
+                                    <!--  Display the result using ToString method  -->
+                                    <Label Text="{Binding}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!--  Selected Member Details  -->
+                <StackLayout x:Name="SelectedMemberLayout" Margin="0,20,0,0">
+                    <Label
+                        Margin="20,0,0,0"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="Selected Member Details"
+                        TextDecorations="Underline" />
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                    <!--  Display fields for the selected member  -->
+                    <Label
+                        x:Name="SelectedMemberDetailsLabel"
+                        Margin="20,0,0,0"
+                        FontSize="16" />
+                </StackLayout>
+
+                <!--  Update Fields Heading  -->
+                <Label
+                    Margin="20,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Text="Update Fields"
+                    TextDecorations="Underline" />
+                <StackLayout
+                    x:Name="UpdateFieldsLayout"
+                    Margin="0,20,0,0"
+                    HorizontalOptions="CenterAndExpand">
+
+                    <!--  HorizontalStackLayout for New Username Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Username: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewUsernameEntry" Placeholder="Enter New Username" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Passowrd Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Password: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry
+                                x:Name="NewPasswordEntry"
+                                IsPassword="True"
+                                Placeholder="Enter New Password" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Confirm Passwsord Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Confirm Password: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry
+                                x:Name="NewConfirmPasswordEntry"
+                                IsPassword="True"
+                                Placeholder="Enter New Confirm Password" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                    <!--  HorizontalStackLayout for New First Name Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New First Name: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewFirstNameEntry" Placeholder="Enter New First Name" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Last Name Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Last Name: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewLastNameEntry" Placeholder="Enter New Last Name" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                    <!--  HorizontalStackLayout for New Address Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Address: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewAddressEntry" Placeholder="Enter New Address" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New City Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New City: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewCityEntry" Placeholder="Enter New City" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Region Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Region: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewRegionEntry" Placeholder="Enter New Region" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Postal Code and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Postal Code (A#A #A#): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewPostalCodeEntry" Placeholder="Enter New Postal Code" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Country Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Country: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewCountryEntry" Placeholder="Enter New Country" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Phone Number Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Phone Number (10-Digit): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewPhoneNumberEntry" Placeholder="Enter New Phone Number" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Email Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Email (username@domain.interdomain): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewEmailEntry" Placeholder="Enter New Email" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                    <!--  HorizontalStackLayout for New Gender and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Gender: (Male/Female)"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewGenderEntry" Placeholder="Enter New Gender" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Date of Birth Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Date of Birth (YYYY/MM/DD): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewDateOfBirthEntry" Placeholder="Enter New Date of Birth" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                    <!--  HorizontalStackLayout for New Membership Type Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Membership Type (Machines/Personal Training/Both): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewMembershipTypeEntry" Placeholder="Enter New Membership Type" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Health Information Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Health Information: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewHealthInformationEntry" Placeholder="Enter New Health Information" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Fitness Goals Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Fitness Goals (Lose Weight/Build Muscle/Both): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewFitnessGoalsEntry" Placeholder="Enter New Fitness Goals" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                    <!--  HorizontalStackLayout for New Emergency Contact Name Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Emergency Contact Name: "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewEmergencyContactNameEntry" Placeholder="Enter New Emergency Contact Name" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Emergency Contact Number Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Emergency Contact Number (10-Digit): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewEmergencyContactNumberEntry" Placeholder="Enter New Emergency Contact Number" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                    <!--  HorizontalStackLayout for New Preferred Workout Time Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Preferred Workout Time (Morning/Afternoon/Evening/Anytime): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewPreferredWorkoutTimeEntry" Placeholder="Enter New Preferred Workout Time" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Training Sessions Per Week Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Training Sessions Per Week (number): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewTrainingSessionsPerWeekEntry" Placeholder="Enter New Training Sessions Per Week" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  HorizontalStackLayout for New Medical Conditions Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Has Medical Conditions? (True/False): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewMedicalConditionsEntry" Placeholder="Enter New Has Medical Conditions" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                    <!--  HorizontalStackLayout for New Personal Training Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Wants Personal Training? (True/False): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewPersonalTrainingEntry" Placeholder="Enter New Wants Personal Training" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                    <!--  HorizontalStackLayout for New Opt-In for Newsletter Name Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Opt-In for Newsletter? (True/False): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewOptInForNewsletterEntry" Placeholder="Enter New Opt-In for Newsletter" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                    <!--  HorizontalStackLayout for New Last Check-In Date Time Label and Entry horizontally  -->
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="80,0,0,0"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            Text="New Last Check-In Date (YYYY/MM/DD): "
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="470" />
+                        <StackLayout>
+                            <Entry x:Name="NewLastCheckInDateTimeEntry" Placeholder="Enter New Last Check-In Date" />
+                            <BoxView HeightRequest="1" Color="#4529BA" />
+                        </StackLayout>
+                    </HorizontalStackLayout>
+
+                    <!--  BoxView for spacing  -->
+                    <BoxView HeightRequest="20" Color="Transparent" />
+
+                </StackLayout>
+
+                <!--  Update and Delete buttons  -->
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Button
+                        x:Name="UpdateButton"
+                        Margin="0,40,40,50"
+                        Padding="10"
+                        BackgroundColor="#4529BA"
+                        Clicked="OnClickUpdate"
+                        CornerRadius="20"
+                        Text="Update Member"
+                        TextColor="White"
+                        WidthRequest="150" />
+                    <Button
+                        x:Name="DeleteButton"
+                        Margin="0,40,40,50"
+                        Padding="10"
+                        BackgroundColor="#FF0000"
+                        Clicked="OnClickDelete"
+                        CornerRadius="20"
+                        Text="Delete Member"
+                        TextColor="White"
+                        WidthRequest="150" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
