@@ -195,16 +195,17 @@ Feel free to reach out if you encounter any issues or have suggestions for impro
         Or by using your IDEs built-in _NuGet_ package manager GUI.
 
 2. **Building and Running the App**
-_IMPORTANT NOTE:_
-Before running the app, ensure that you comment out the dummy data to prevent it from being inserted into the database inadvertently. Failure to do so may result in unwanted data being added to the database during the initial run. Please refer to the code comments for guidance on how to comment out the dummy data.
+
+    _IMPORTANT NOTE:_
+    _Before running the app, ensure that you comment out the dummy data to prevent it from being inserted into the database inadvertently. Failure to do so may result in unwanted data being added to the database during the initial run. Please refer to the code comments for guidance on how to comment out the dummy data._
 
    1. Make sure you have **_.NET MAUI_** installed on your machine.
      If you don't have **_.NET MAUI_** on your system; you can install it by running,
 
-     _Note: Make sure your working directory in your terminal is SET to the folder you cloned the project to._
+      _Note: Make sure your working directory in your terminal is SET to the folder you cloned the project to._
 
-     ```bash
-     dotnet workload install maui -s 'https://api.nuget.org/v3/index.json'
-     ```
+        ```bash
+        dotnet workload install maui -s 'https://api.nuget.org/v3/index.json'
+        ```
 
    1. In the IDE of your choice, click the "Build" button to compile the project. Then click the "Run" button to run and deploy the app.
