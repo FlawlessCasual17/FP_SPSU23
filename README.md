@@ -163,7 +163,7 @@ Feel free to reach out if you encounter any issues or have suggestions for impro
     Clone the repository to your local machine.
 
     ```bash
-    git clone "https://github.com/FlawlessCasual17/FP_SPSU23.git"
+    git clone 'https://github.com/FlawlessCasual17/FP_SPSU23.git'
     ```
 
 2. **Navigate to the project directory.**
