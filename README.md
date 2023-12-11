@@ -5,7 +5,7 @@ _<sup>Last Updated: December 11, 2023 4:12:07 AM (UTC)</sup>_
 _Developed by Hieu Pham, Sherif Mansour, and Kris Schneider_
 
 * [.NET MAUI Final Project 2023](#net-maui-final-project-2023)
-  * [A short summarization of the app](#a-short-summarization-of-the-app)
+  * [A short explanation of this app](#a-short-explanation-of-this-app)
     * [How to use the app](#how-to-use-the-app)
       * [Sign Up](#sign-up)
       * [Log In](#log-in)
@@ -18,7 +18,9 @@ _Developed by Hieu Pham, Sherif Mansour, and Kris Schneider_
     * [Getting Started (For developers only)](#getting-started-for-developers-only)
       * [Build and run the app](#build-and-run-the-app)
 
-## A short summarization of the app
+--------
+
+## A short explanation of this app
 
 Once you've signed up and logged in, you can perform a search, choose a member from the search results, and add a new entry to update the desired field by clicking the update button. The process for deleting is similar: you search, select, click delete, confirm the deletion, and then voilà.
 
@@ -36,8 +38,6 @@ To use the SKH Gym Management App, you need to sign up with your credentials.
 
 4. Click the "Submit" button to create your account.
 
---------
-
 #### Log In
 
 After signing up, log in to access the app's functionalities.
@@ -47,8 +47,6 @@ After signing up, log in to access the app's functionalities.
 2. Enter your username and password.
 
 3. Click the "Login" button.
-
---------
 
 #### Search Members
 
@@ -60,8 +58,6 @@ Once logged in, you can search for members in the database.
 
 3. Select the desired member from the search results.
 
---------
-
 #### Update Member Information
 
 After selecting a member, you can update their information.
@@ -71,8 +67,6 @@ After selecting a member, you can update their information.
 2. Type the new information in the corresponding fields.
 
 3. Click the "Update" button to save the changes.
-
---------
 
 #### Delete Members
 
