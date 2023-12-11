@@ -45,5 +45,6 @@
     "powershell.integratedConsole.startInBackground": true,
     "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
     "powershell.scriptAnalysis.enable": true,
-    "svg.preview.background": "dark-transparent"
+    "svg.preview.background": "dark-transparent",
+    "languageToolLinter.languageTool.disabledRules": "WHITESPACE_RULE,MORFOLOGIK_RULE_EN_CA,COMMA_PARENTHESIS_WHITESPACE,LC_AFTER_PERIOD"
 }
